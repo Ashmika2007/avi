@@ -1,0 +1,260 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: #ffffff;
+}
+ 
+::selection{
+color:#ffffff;
+background-color:#9b0909;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #761010;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin-right: auto;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #873b3b;
+    color: #fff;
+    border-radius: 4px;
+}
+/*nav end*/
+
+ 
+
+
+/* dairy-product */
+#dairy-product{
+    margin: 20px auto;
+    justify-content: center;
+    color: #6b5352;
+
+}
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    align-items: center;
+    margin: 80px 0px;
+}
+.product-box img{
+    width: 80%;
+    height: 160px;
+    object-fit: contain;
+    object-position: center;
+    margin: auto;
+}
+.product-box{
+    width: 100%;
+    border: 1px solid #481212;
+    border-radius: 40px;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+}
+.product-box:hover{
+    padding: 10px;
+    transition: .4s;
+}
+.product-box strong{
+    color: #202020;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.product-box .quantity{
+    color: #949494;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.product-box .price{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #393939;
+}
+
+
+.like-btn:hover {
+    color: red;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+thead {
+    background-color: #f4f4f4;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#total-price {
+    text-align: right;
+}
+
+#buy-now {
+    padding: 0.8rem 2rem;
+    background-color: #e36057;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#buy-now:hover {
+    background-color: #a01616;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.item label {
+    
+    font-size: 1rem;
+    color: #931919;
+    flex-grow: 1;
+}
+
+.item input {
+    width: 60px;
+    padding: 0.3rem;
+    border: 1px solid #e13333;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.item button { 
+    padding: 0.3rem 2rem;
+    border: none;
+    background-color: hsl(0, 67%, 53%);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+}
+.item input {
+    width: 60px;
+    padding: 0.3rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjusted margin */
+    display: flex;
+}
+.item button:hover {
+    background-color: #e73835;
+}
+/* Order Summary */
+#order-summary {
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#order-summary h2 {
+    margin-bottom: 1rem;
+}
+
+#save-fav, #apply-fav {
+    padding: 0.4rem 0.5rem;
+    border: none;
+    background-color: #676464;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0.5rem 0.5rem 1rem 0; /* Adjust the margin as needed */
+}
+
+#save-fav:hover, #apply-fav:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+#save-fav:active, #apply-fav:active {
+    background-color: #a93226;
+    transform: scale(1);
+}
